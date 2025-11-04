@@ -317,6 +317,19 @@
   </footer>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Floating WhatsApp Button -->
+  <a id="whatsapp-float" 
+     href="https://wa.me/5514991712801?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20suporte%20t%C3%A9cnico." 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Abrir conversa no WhatsApp"
+     title="Fale conosco no WhatsApp">
+    <!-- SVG icon (WhatsApp) -->
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#ffffff" d="M20.52 3.48A11.924 11.924 0 0012.06.01C5.66.01.78 4.89.78 11.29c0 1.99.52 3.92 1.52 5.62L.01 24l7.34-1.92a11.33 11.33 0 005.0 1.09h.01c6.4 0 11.28-4.88 11.28-11.28 0-3.02-1.19-5.86-3.12-7.41z"/>
+      <path fill="#25D366" d="M20.52 3.48A11.924 11.924 0 0012.06.01C5.66.01.78 4.89.78 11.29c0 1.99.52 3.92 1.52 5.62L.01 24l7.34-1.92a11.33 11.33 0 005.0 1.09h.01c6.4 0 11.28-4.88 11.28-11.28 0-3.02-1.19-5.86-3.12-7.41z" opacity="0.0"/>
+    </svg>
+  </a>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -326,21 +339,15 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.getElementById('whatsapp-float').addEventListener('click', function() {
+      console.log('WhatsApp button clicked');
+      // Se usar Google Analytics / GTM, adicione aqui o evento de conversão.
+      // Exemplo (gtag): gtag('event', 'click', { 'event_category': 'whatsapp', 'event_label': 'floating_button' });
+    });
+  </script>
 
   <script src="assets/js/main.js"></script>
-<!-- Floating WhatsApp Button -->
-<a id="whatsapp-float" 
-   href="https://wa.me/5514991712801?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20suporte%20t%C3%A9cnico." 
-   target="_blank" 
-   rel="noopener noreferrer"
-   aria-label="Abrir conversa no WhatsApp"
-   title="Fale conosco no WhatsApp">
-  <!-- SVG icon (WhatsApp) -->
-  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill="#ffffff" d="M20.52 3.48A11.924 11.924 0 0012.06.01C5.66.01.78 4.89.78 11.29c0 1.99.52 3.92 1.52 5.62L.01 24l7.34-1.92a11.33 11.33 0 005.0 1.09h.01c6.4 0 11.28-4.88 11.28-11.28 0-3.02-1.19-5.86-3.12-7.41z"/>
-    <path fill="#25D366" d="M20.52 3.48A11.924 11.924 0 0012.06.01C5.66.01.78 4.89.78 11.29c0 1.99.52 3.92 1.52 5.62L.01 24l7.34-1.92a11.33 11.33 0 005.0 1.09h.01c6.4 0 11.28-4.88 11.28-11.28 0-3.02-1.19-5.86-3.12-7.41z" opacity="0.0"/>
-  </svg>
-</a>
 
 </body>
 </html>
